@@ -144,7 +144,7 @@ function Feed() {
 
   <section class="box-post">
     <form>
-      <textarea class='js-text-input input-feed' placeholder= 'Escreva sua publicação aqui...'> </textarea><br>
+      <textarea class='js-text-input input-feed' placeholder= 'Escreva sua publicação aqui...'></textarea><br>
       ${Button({ class: 'publicar', title: 'Publicar', onclick: savePost })}<br>
     </form>
   <ul class="js-post"></ul>

@@ -31,16 +31,17 @@ function create() {
   if (nome === '' || sobrenome === '') {
     errorMessage.textContent = 'Preencha os campos em branco';
   } else if (password === passwordConfirmation) {
-    firebase.auth().createUserWithEmailAndPassword(email, password).then(() => {
-      window.location = '#feed';
-      window.saveUser();
-    }).catch((error) => {
-      const errorCode = error.code;
-      if (errorCode === 'auth/weak-password') errorMessage.textContent = 'A senha deve possuir no mínimo 6 caracteres';
-      if (errorCode === 'auth/email-already-in-use') errorMessage.textContent = 'O e-mail informado já está em uso';
-      if (errorCode === 'auth/operation-not-allowed') errorMessage.textContent = 'Conta não ativada';
-      if (errorCode === 'auth/invalid-email') errorMessage.textContent = 'Email inválido';
-    });
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(() => {
+        window.location = '#feed';
+        window.saveUser();
+      }).catch((error) => {
+        const errorCode = error.code;
+        if (errorCode === 'auth/weak-password') errorMessage.textContent = 'A senha deve possuir no mínimo 6 caracteres';
+        if (errorCode === 'auth/email-already-in-use') errorMessage.textContent = 'O e-mail informado já está em uso';
+        if (errorCode === 'auth/operation-not-allowed') errorMessage.textContent = 'Conta não ativada';
+        if (errorCode === 'auth/invalid-email') errorMessage.textContent = 'Email inválido';
+      });
   } else if (password !== passwordConfirmation) {
     errorMessage.textContent = 'Senha não confere';
   } else if (email === '' || password === '') {
