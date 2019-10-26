@@ -87,7 +87,7 @@ function loadData(classe) {
 
 function savePost() {
   const txt = document.querySelector('.js-text-input');
-  console.log(txt)
+
   const post = {
     txt: txt.value,
     date: new Date(),
@@ -151,6 +151,7 @@ function Feed() {
   </section>
   `;
   window.location = '#feed';
+
   return template;
 }
 

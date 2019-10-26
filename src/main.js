@@ -4,6 +4,13 @@ import Feed from './pages/feed.js';
 import Config from './pages/config.js';
 import Profile from './pages/profile.js';
 
+function autoresize(event) {
+  event.preventDefault();
+  const txt = document.querySelector('.js-text-input');
+  txt.style.cssText = 'height: auto';
+  txt.style.height = `${txt.scrollHeight}px`;
+}
+
 function verificaUser() {
   firebase.auth().onAuthStateChanged((user) => {
     const currentHash = window.location.hash;
@@ -21,7 +28,8 @@ function verificaUser() {
         default:
           main.innerHTML = Feed();
           window.app.printName();
-          window.app.loadData('.js-post');
+          window.app.loadData('.js-post'); 
+          document.querySelector('.js-text-input').addEventListener('input', autoresize);
       }
     } else if (!user) {
       switch (currentHash) {
