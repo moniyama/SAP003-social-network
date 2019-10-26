@@ -92,7 +92,6 @@ function loadData(classe) {
 
 function savePost() {
   const txt = document.querySelector('.js-text-input');
-
   const post = {
     txt: txt.value,
     date: new Date(),
@@ -104,6 +103,7 @@ function savePost() {
   postCollection.add(post)
     .then(() => {
       txt.value = '';
+      txt.style.height = '34px';
     });
 }
 
