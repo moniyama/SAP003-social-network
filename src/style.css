@@ -120,6 +120,8 @@ main {
   overflow: hidden;
   box-sizing: border-box;
   width: auto;
+  padding: 10px;
+  vertical-align: center;
 }
 
 textarea {

@@ -61,17 +61,22 @@ function printData(post, classe) {
           ${CardUser(idPost, date, txt, nome)}
           `;
           postList.innerHTML += postTemplateUser;
+
+          const posts = document.getElementById(idPost);
+          posts.style.height = `${posts.scrollHeight}px`;
         } else {
           const postTemplate = `
             ${Card(idPost, date, txt, nome)}
-          `;
+            `;
           postList.innerHTML += postTemplate;
+
+          const posts = document.getElementById(idPost);
+          posts.style.height = `${posts.scrollHeight}px`;
         }
       }
     });
   });
 }
-
 
 function loadData(classe) {
   const postCollection = firebase.firestore().collection('posts');
