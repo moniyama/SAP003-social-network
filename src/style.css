@@ -6,6 +6,10 @@ main {
   justify-content: center;
 }
 
+body {
+  background-image: url("/src/imagens/Fundo1.png");
+}
+
 .primary-button {
   background-color: #F2C84B;
   font-size: 0.8rem;
@@ -23,8 +27,9 @@ main {
   background-color: transparent;
 }
 
-.editar {
-  background-color: lightgreen;
+.editar, .save {
+  background-color: #F29F05
+  ;
 }
 
 .logo {
@@ -147,7 +152,7 @@ textarea {
 
 .navbar-brand {
   flex-basis: 100%;
-  align-self: center;
+  /* align-self: center; */
   font-size: larger;
 }
 
@@ -168,6 +173,10 @@ textarea {
   padding: 10px;
 }
 
+.box-profile {
+  text-align: center;
+}
+
 .box-profile1 {
   text-align: left;
   padding-left: 2%;
@@ -181,7 +190,6 @@ li {
 }
 
 .js-post, .js-user-post {
-  list-style-type: none;
   padding-inline-start: 0px;
 }
 
@@ -193,7 +201,9 @@ li {
 
 .card-btns {
   text-align: left;
-  margin: 10px;
+  padding: 10px;
+  /* background-color:#F2C84B */
+  ;
 }
 
 li.card {

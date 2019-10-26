@@ -14,10 +14,6 @@ function profile() {
   window.location = '#profile';
 }
 
-function edit() {
-  window.location = '#config';
-}
-
 function editPost(event) {
   const id = event.currentTarget.dataset.id;
   document.querySelector(`textarea[id='${id}']`).disabled = false;
@@ -134,7 +130,6 @@ function Feed() {
       ${Button({ class: 'nav-btn', onclick: showMenubar, title: '<i class="fas fa-bars"></i>' })}
       <ul class="toggle-content" id="lista-menu">
         <li> ${Button({ class: 'profile', title: 'Perfil', onclick: profile })} </li>
-        <li> ${Button({ class: 'profile', title: 'Editar', onclick: edit })}</li>
         <li> ${Button({ class: 'profile', title: 'Sair', onclick: logout })}</li>
         </ul>
     </div>
@@ -167,6 +162,8 @@ window.app = {
   printName,
   editPost,
   savePostEdited,
+  showMenubar,
+  logout,
 };
 
 export default Feed;
