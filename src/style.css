@@ -15,9 +15,9 @@ main {
 .logo,
 .box-logo {
   max-width: 100%;
-  height: auto;
-  width: 500px;
+  height: 35vh;
   margin: 2%;
+  text-align: ce;
 }
 .error {
   font-weight: bolder;
