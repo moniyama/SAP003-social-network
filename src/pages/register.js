@@ -1,7 +1,6 @@
 import Button from '../components/button.js';
 import Input from '../components/input.js';
 import Image from '../components/image.js';
-import erro from '../Utils/translateError.js';
 
 const saveUser = () => {
   const nome = document.querySelector('.js-text-input');
@@ -54,7 +53,9 @@ const Register = () => {
       ${Input({ type: 'password', class: 'js-confirm-password-input input-register', placeholder: ' confirmar senha' })}
       ${Input({ type: 'text', class: 'js-text-input input-register', placeholder: ' nome' })}
       ${Input({ type: 'text', class: 'js-text2-input input-register', placeholder: ' sobrenome' })}
-      ${Input({ type: 'text', maxlength: '100', class: 'js-bio-input input-register', placeholder: ' bio' })}
+      ${Input({
+    type: 'text', maxlength: '100', class: 'js-bio-input input-register', placeholder: ' bio'
+  })}
       <select class='js-status-input  input-register'>
         <option value= >Status de Relacionamento</option>
         <option value='Solteiro(a)'>Solteiro(a)</option>
