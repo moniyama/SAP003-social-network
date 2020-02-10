@@ -2,21 +2,19 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-/* TELA MOBILE */
-
-/* LOGIN */
 .tela {
   margin: 0 5%;
 }
 .subtitle {
-  color: #F29F05;
+  color: #f29f05;
   font-size: 0.8rem;
 }
-.logo, .box-logo {
-  max-width:100%;
+.logo,
+.box-logo {
+  max-width: 100%;
   height: auto;
   width: 500px;
   margin: 2%;
@@ -26,21 +24,23 @@ main {
   color: red;
 }
 .input-entrada {
-  background-color:#CCD5D9;
+  background-color: #ccd5d9;
   border-radius: 20px;
   margin: 5px;
-  outline:none;
+  outline: none;
   height: 30px;
   width: 80%;
 }
 .google {
   margin-left: 45%;
-  color: #F29F05;
+  color: #f29f05;
   cursor: pointer;
   margin-top: 15px;
-  background-color: #CCD5D9;
+  background-color: #ccd5d9;
 }
-.box-login, .box-register, .box-config {
+.box-login,
+.box-register,
+.box-config {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -48,9 +48,9 @@ main {
   text-align: center;
 }
 
-/* REGISTER / CONFIG */
-.input-register, .input-config {
-  background-color:white;
+.input-register,
+.input-config {
+  background-color: white;
   border-radius: 15px;
   height: 30px;
   width: 70%;
@@ -59,10 +59,8 @@ main {
   outline: none;
 }
 
-/*  */
-
 .button {
-  background-color: #F2C84B;
+  background-color: #f2c84b;
   font-size: 0.8rem;
   color: white;
   border-radius: 25px;
@@ -74,18 +72,17 @@ main {
   outline: none;
   width: 100px;
 }
-.round-button{
+.round-button {
   border-radius: 50%;
   padding: 8px;
   width: 35px;
   border: none;
 }
 
-/* POST CARD */
 .card {
-  border: solid 1px #CCD5D9;
+  border: solid 1px #ccd5d9;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px 2px #CCD5D9;
+  box-shadow: 1px 1px 5px 2px #ccd5d9;
   margin: 20px 10px;
   max-width: 600px;
 }
@@ -94,10 +91,10 @@ li {
   flex-direction: column;
 }
 .post-header {
-  background-color:#8C0F54 ;
+  background-color: #8c0f54;
   display: flex;
   justify-content: left;
-  color: #CCD5D9;
+  color: #ccd5d9;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 0px 20px;
@@ -110,8 +107,9 @@ li {
   overflow: auto;
   background: white;
   border: none;
-  border-bottom: solid 1px #CCD5D9;
+  border-bottom: solid 1px #ccd5d9;
   color: rgb(110, 110, 110);
+  resize: none;
 }
 .post-btn {
   text-align: left;
@@ -119,8 +117,10 @@ li {
   display: flex;
   justify-content: space-between;
 }
-.editar, .save, .like {
-  background: #F2C84B;
+.editar,
+.save,
+.like {
+  background: #f2c84b;
   margin-right: 5px;
   outline: none;
 }
@@ -130,17 +130,16 @@ li {
 .deletar {
   background-color: transparent;
   color: red;
-  border: #CCD5D9;
+  border: #ccd5d9;
 }
 
-/* FEEED */
 .navbar {
   width: 100%;
   padding: 10px 0px;
   display: flex;
   flex-direction: row;
-  background: #F2C84B;
-  color: #8C0F54;
+  background: #f2c84b;
+  color: #8c0f54;
   max-height: 25px;
   margin-bottom: 50px;
 }
@@ -156,14 +155,14 @@ li {
   border-radius: 0px;
   margin: 0px;
   width: 60px;
-  background: #8C0F54;
+  background: #8c0f54;
 }
 .option-btn {
   width: 60px;
   margin: 0px;
   border-top: solid 1px white;
   border-radius: 0px;
-  background: #8C0F54;
+  background: #8c0f54;
 }
 .toggle-content {
   display: none;
@@ -171,7 +170,8 @@ li {
   margin: 0px 0px;
 }
 
-.body-feed, .body-profile {
+.body-feed,
+.body-profile {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -182,10 +182,9 @@ li {
   flex-direction: row;
 }
 .foto {
-  /* background-image: url(.//imagens/people.jpg); */
-  background: #54BFB5;
-	width: 100px;
-	height: 100px;
+  background: #54bfb5;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 .foto-box {
@@ -202,35 +201,33 @@ li {
   color: rgb(155, 162, 165);
 }
 .input-feed {
-  width: 250px;
-  padding: 2px;
-  margin: 2px;
-  border: solid 1px #CCD5D9;
+  border: solid 1px #ccd5d9;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px 2px #CCD5D9;
+  box-shadow: 1px 1px 5px 2px #ccd5d9;
   outline: none;
+  width: 500px;
+  resize: none;
+  padding: 2%;
+  height: 54px;
 }
 
-/* PROFILE */
+.js-post {
+  padding: 0px;
+}
 .box-profile {
   display: flex;
   flex-direction: row;
   text-align: center;
   margin: 50px 5%;
-  border: solid 1px #CCD5D9;
+  border: solid 1px #ccd5d9;
   background-image: url(.//imagens/profile.png);
   background-repeat: no-repeat;
   padding-top: 70px;
-  /* max-width: 380px; */
   width: 360px;
   height: 250px;
 }
 
-
-
 @media (min-width: 500px) {
-
-  /* LOGIN */
   .tela {
     display: flex;
     flex-direction: row;
@@ -253,22 +250,22 @@ li {
     text-align: center;
     justify-content: center;
   }
-  .box-login { 
+  .box-login {
     width: 50%;
     min-width: 400px;
     width: 400px;
     margin: 0 5%;
     background-color: rgba(218, 218, 253, 0.034);
-    border: 1px solid rgb(215, 231, 204) ;
-    box-shadow: 3px 3px 5px 5px #CCD5D9;
-  } 
+    border: 1px solid rgb(215, 231, 204);
+    box-shadow: 3px 3px 5px 5px #ccd5d9;
+  }
 
   /* REGISTER / CONFIG */
-  .box-register { 
+  .box-register {
     min-width: 400px;
     background-color: rgba(218, 218, 253, 0.034);
     margin-right: 7%;
-  } 
+  }
   .box-config {
     min-width: 400px;
   }
@@ -276,7 +273,6 @@ li {
     width: 50%;
   }
 
-  /* FEEED */
   .navbar-title {
     margin-right: 25%;
     margin-left: 25%;
@@ -285,7 +281,8 @@ li {
     flex-basis: 50%;
   }
 
-  .body-feed, .body-profile {
+  .body-feed,
+  .body-profile {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -293,7 +290,7 @@ li {
   .box-profile-feed {
     text-align: center;
     margin: 50px 5%;
-    border: solid 1px #CCD5D9;
+    border: solid 1px #ccd5d9;
     background-image: url(.//imagens/profile.png);
     background-repeat: no-repeat;
     padding-top: 70px;
@@ -314,26 +311,33 @@ li {
     margin: 50px 5%;
   }
 
-  /* PROFILE */
-  
   .box-profile {
     display: flex;
     flex-direction: row;
     text-align: center;
     margin: 50px 5%;
-    border: solid 1px #CCD5D9;
+    border: solid 1px #ccd5d9;
     background-image: url(.//imagens/profile.png);
     background-repeat: no-repeat;
     padding-top: 70px;
-    /* max-width: 380px; */
     width: 360px;
     height: 250px;
   }
 }
 
 /* palheta de cores:*/
-.Cinza   { color: #CCD5D9; }
-.Blue    { color: #54BFB5; }
-.yellow1 { color: #F2C84B; }
-.yellow2 { color: #F29F05; }
-.Roxo    { color: #8C0F54; }
+.Cinza {
+  color: #ccd5d9;
+}
+.Blue {
+  color: #54bfb5;
+}
+.yellow1 {
+  color: #f2c84b;
+}
+.yellow2 {
+  color: #f29f05;
+}
+.Roxo {
+  color: #8c0f54;
+}
