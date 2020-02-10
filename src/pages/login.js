@@ -1,7 +1,6 @@
 import Button from '../components/button.js';
 import Input from '../components/input.js';
 import Image from '../components/image.js';
-import erro from '../Utils/translateError.js';
 
 const signIn = () => {
   const email = document.querySelector('.js-email-input').value;
@@ -55,7 +54,9 @@ const Login = () => {
         </form>
         <p class='error'></p>
         <label>Entrar com a conta do Google</label>
-          ${Button({ icone: 'fab fa-google', class: 'google', classType: 'round-button', title: 'google', onclick: google })}
+          ${Button({
+    icone: 'fab fa-google', class: 'google', classType: 'round-button', title: 'google', onclick: google,
+  })}
         <p>Ainda não tem uma conta? <a href='#register'>Registre-se</a></p>
       </section>
     </main>

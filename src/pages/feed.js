@@ -89,7 +89,7 @@ const loadPosts = (classe) => {
           const posts = snapshot.docs;
           postCard(posts, users, '.js-post');
         });
-    })
+    });
 };
 
 const savePost = () => {
@@ -134,10 +134,16 @@ const Feed = () => {
   const template = `
     <nav class="navbar">
       <div class="nav-btn-div">
-        ${Button({ class: 'nav-btn', classType: 'button', onclick: openMenu, title: '<i class="fas fa-bars"></i>' })}
+        ${Button({
+    class: 'nav-btn', classType: 'button', onclick: openMenu, title: '<i class="fas fa-bars"></i>',
+  })}
         <ul class="toggle-content" id="lista-menu">
-          <li> ${Button({ class: 'option-btn', classType: 'button', title: 'Perfil', onclick: profile })} </li>
-          <li> ${Button({ class: 'option-btn', classType: 'button', title: 'Sair', onclick: logout })}</li>
+          <li> ${Button({
+    class: 'option-btn', classType: 'button', title: 'Perfil', onclick: profile,
+  })} </li>
+          <li> ${Button({
+    class: 'option-btn', classType: 'button', title: 'Sair', onclick: logout,
+  })}</li>
         </ul>
       </div>
       <a class="navbar-title">&lt Yellow Bag &gt</a>
@@ -156,8 +162,10 @@ const Feed = () => {
 
       <section class="box-post-feed">
         <form>
-          <textarea class='js-text-input input-feed' placeholder= 'Escreva sua publicação aqui...'> </textarea><br>
-          ${Button({ class: 'publicar', classType: 'button', title: 'Publicar', onclick: savePost })}<br>
+          <textarea class='js-text-input input-feed' placeholder= 'Escreva sua publicação aqui...'></textarea><br>
+          ${Button({
+    class: 'publicar', classType: 'button', title: 'Publicar', onclick: savePost,
+  })}<br>
         </form>
         <ul class="js-post"></ul>
       </section>
