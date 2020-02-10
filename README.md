@@ -63,6 +63,24 @@ Foi passado um layout da tela mobile e desktop que deveríamos replicar visualme
 
 * Ao final devo poder ingressar na Rede Social e poder visualizar os dados de meu perfil criado e editá-los.
 
+## Layout final
+
+Pode-se navegar com usuario teste:
+
+```bash
+email: usuario@teste.com
+senha: 123123
+```
+
+* Tela mobile
+
+    ![mobile](src/imagens/mobile_login.png)
+    ![mobile](src/imagens/mobile_feed.png)
+
+* Tela Desktop
+
+    ![desktop](src/imagens/web_feed.png)
+
 ## 3. Considerações gerais
 
 * Verifique se tem instalado o [Node.js](https://nodejs.org/) e o [npm](https://docs.npmjs.com/).
