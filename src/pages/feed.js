@@ -85,6 +85,7 @@ const loadPosts = (classe) => {
       firebase.firestore()
         .collection('posts')
         .orderBy('date', 'desc')
+        .limit(20)
         .onSnapshot((snapshot) => {
           const posts = snapshot.docs;
           postCard(posts, users, '.js-post');

@@ -22,9 +22,12 @@ O objetivo do projeto foi a criação de uma rede social, cuja temática foi dei
 O tema escolhido para a criação foi "viagens".
 
 As **caraterísticas técnicas** da aplicação são:
-- É uma Single-Page Application [SPA](https://dzone.com/articles/how-single-page-web-applications-actually-work) - foi implementado um sistema de rotas (sem uso de bibliotecas externas) para trocar de uma tela para outra de maneira dinâmica (SPA).
-- Foi desenhada com enfoque [mobile first](https://darwindigital.com/mobile-first-versus-responsive-web-design/), e apresenta design responsivo
-- Permite a persistência de dados - a estrutura de dados foi desenhada de forma à consultá-los, atualizá-los, modificá-los e eliminá-los segundo os requerimentos do usuário. Para isto, foi utilizado `Firestore` do `Firebase`
+
+* É uma Single-Page Application [SPA](https://dzone.com/articles/how-single-page-web-applications-actually-work) - foi implementado um sistema de rotas (sem uso de bibliotecas externas) para trocar de uma tela para outra de maneira dinâmica (SPA).
+
+* Foi desenhada com enfoque [mobile first](https://darwindigital.com/mobile-first-versus-responsive-web-design/), e apresenta design responsivo
+
+* Permite a persistência de dados - a estrutura de dados foi desenhada de forma à consultá-los, atualizá-los, modificá-los e eliminá-los segundo os requerimentos do usuário. Para isto, foi utilizado `Firestore` do `Firebase`
 
 Foi passado um layout da tela mobile e desktop que deveríamos replicar visualmente e cujo conteúdo, cores e fontes de texto foi deixado à nosso critério.
 
@@ -36,7 +39,6 @@ Foi passado um layout da tela mobile e desktop que deveríamos replicar visualme
 
     ![desktop](https://user-images.githubusercontent.com/32286663/56174626-fcb74080-5fb8-11e9-8854-26e8d9c4e25f.png)
 
-
 ## Considerações Gerais do Projeto
 
 * Nos foram dadas **histórias de usuário** com os requisitos e funcionalidades que o usuário deseja.
@@ -44,7 +46,6 @@ Foi passado um layout da tela mobile e desktop que deveríamos replicar visualme
 * O projeto foi desenvolvido em equipes de 3 integrantes. A estratégia de desenvolvimento usada para que todos os membros alcançassem os objetivos de aprendizagem foi pair programming e sub-divisão das histórias de usuário.
 
 * Não foi permitido o uso de frameworks de CSS (bootstrap), nem de estilização com `float`.
-
 
 ## Histórias de Usuário
 
@@ -61,7 +62,6 @@ Foi passado um layout da tela mobile e desktop que deveríamos replicar visualme
 * Eu como usuário logado, posso escrever, salvar, editar ou deletar um comentário em minhas publicações.
 
 * Ao final devo poder ingressar na Rede Social e poder visualizar os dados de meu perfil criado e editá-los.
-
 
 ## 3. Considerações gerais
 
