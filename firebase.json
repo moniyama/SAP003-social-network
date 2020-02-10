@@ -13,6 +13,7 @@
     "source": "functions"
   },
   "hosting": {
+    "site": "yellowbag",
     "public": "src",
     "ignore": [
       "firebase.json",
